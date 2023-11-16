@@ -13,7 +13,7 @@ class UsuarioController{
         $result = $userModel->logIn($correo, $contra);
         
         if($result == true){
-            header("Location: index.php");
+            header("Location: usuario.php");
         } else {
 			echo "<script>javascript:alert('Contraseña incorrecta');</script>";
         }
@@ -45,7 +45,7 @@ class UsuarioController{
         $result = $userModel->register($id_cliente, $nombre, $apellidos, $correo, $contra, $edad, $sexo, $pais, $estado, $calle, $colonia, $numCasa, $CP, $telefono);
 
         if($result == true){
-            header("Location: index.php");
+            header("Location: login.php");
         } else {
             echo "<script>javascript:alert('Error al registrar');</script>";
         }
