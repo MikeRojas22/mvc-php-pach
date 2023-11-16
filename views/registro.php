@@ -3,7 +3,7 @@ session_start();
 require_once('../controllers/UsuarioController.php');
 
 if (isset($_SESSION['user_id'])) {
-	header('Location: index.php');
+	header('Location: usuario.php');
 }
 
 if (isset($_POST["registro"])){
@@ -44,7 +44,6 @@ if (isset($_POST["registro"])){
 				<!--Edad-->
 				<label for="edad">Edad</label><br>
 				<select name="edad_C" id="edad_C">
-					<option value=16>16</option>
 					<option value=17>17</option>
 					<option value=18>18</option>
 					<option value=19>19</option>

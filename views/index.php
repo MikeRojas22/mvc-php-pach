@@ -26,7 +26,7 @@
         <div class="container container--flex">
         <div class="logo-container column column--50">
             <h1 class="logo">MexiHat</h1>
-			<a href='logoutP.php'> Mexihat </a> 
+			<a href='logout.php'> Mexihat </a> 
         </div>
         <div class="main-header__contactInfo column column--50">
             <p class="main-header__contactInfo__phone">

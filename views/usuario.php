@@ -144,7 +144,7 @@ if (isset($_SESSION['user_id'])) {
                         <div class="pedidos-box">
                             <form action="UsuarioP.php">
                                 <!--Id Modelo-->
-                                <label for="idModelo">Id Modelo</label>
+                                <label for="idModelo">Modelo</label>
                                 <input name="idModelo" type="text" value="<?php echo $idMod; ?>" placeholder=""><br><br>
                                 <!--Fecha-->
                                 <label for="fecha">Fecha</label>
