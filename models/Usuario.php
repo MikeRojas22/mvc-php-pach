@@ -32,49 +32,17 @@ class Usuario{
         $this->tel = $tel;
     }
 
-    public function getId() {
-        return $this->id;
-    }
-    
-    public function getNombre() {
-        return $this->nombre;
-    }
-    
-    public function getApellido() {
-        return $this->apellido;
-    }
-    
-    public function getCorreo() {
-        return $this->correo;
-    }
-    
-    public function getPais() {
-        return $this->pais;
-    }
-    
-    public function getEstado() {
-        return $this->estado;
-    }
-    
-    public function getCalle() {
-        return $this->calle;
-    }
-    
-    public function getColonia() {
-        return $this->colonia;
-    }
-    
-    public function getNumCasa() {
-        return $this->numCasa;
-    }
-    
-    public function getCodigo() {
-        return $this->codigo;
-    }
-    
-    public function getTel() {
-        return $this->tel;
-    }
+    public function getId() { return $this->id; }
+    public function getNombre() { return $this->nombre; }
+    public function getApellido() { return $this->apellido; }
+    public function getCorreo() { return $this->correo; }
+    public function getPais() { return $this->pais; }
+    public function getEstado() { return $this->estado; }
+    public function getCalle() { return $this->calle; }
+    public function getColonia() { return $this->colonia; }
+    public function getNumCasa() { return $this->numCasa; }
+    public function getCodigo() { return $this->codigo; }
+    public function getTel() { return $this->tel; }
 
     public function logIn($correo, $contr){
         $conexion = new Conexion();
