@@ -1,10 +1,15 @@
 <?php
 session_start();
 require_once('../controllers/UsuarioController.php');
+require_once('../controllers/PedidoController.php');
+
 
 if (isset($_SESSION['user_id'])) {
     $usuarioController = new UsuarioController();
 	$user = $usuarioController->getUser();
+
+    $pedidoController = new PedidoController();
+    $pedido = $pedidoController->getUltimoPedidoUsuario($user['id_cliente']);
 }
 ?>
 
@@ -52,7 +57,7 @@ if (isset($_SESSION['user_id'])) {
           <ul class="menu" id="menu">
              <li class="menu__item"><a href="index.php" class="menu__link">Inicio</a></li>
              <li class="menu__item"><a href="nosotros.php" class="menu__link">Nosotros</a></li>
-             <li class="menu__item"><a href="catalogos.php" class="menu__link">Catálogo</a></li>
+             <li class="menu__item"><a href="catalogo.php" class="menu__link">Catálogo</a></li>
              <li class="menu__item"><a href="diseña.php" class="menu__link">Diseña</a></li>
           </ul>
 
@@ -145,19 +150,19 @@ if (isset($_SESSION['user_id'])) {
                             <form action="UsuarioP.php">
                                 <!--Id Modelo-->
                                 <label for="idModelo">Modelo</label>
-                                <input name="idModelo" type="text" value="<?php echo $idMod; ?>" placeholder=""><br><br>
+                                <input name="idModelo" type="text" value="<?php echo $pedido['id_modeloP']; ?>" placeholder=""><br><br>
                                 <!--Fecha-->
                                 <label for="fecha">Fecha</label>
-                                <input name="fecha" type="text" value="<?php echo $fecha; ?>" placeholder=""><br><br>
+                                <input name="fecha" type="text" value="<?php echo $pedido['fecha_P']; ?>" placeholder=""><br><br>
                                 <!--Cantidad-->
                                 <label for="cantidad">Cantidad</label>
-                                <input name="cantidad" type="text" value="<?php echo $cant; ?>" placeholder=""><br><br>
+                                <input name="cantidad" type="text" value="<?php echo $pedido['cantidadPro_P']; ?>" placeholder=""><br><br>
                                 <!--Total-->
                                 <label for="total">Total</label>
-                                <input name="total" type="text" value="<?php echo $total; ?>" placeholder=""><br><br>
+                                <input name="total" type="text" value="<?php echo $pedido['total']; ?>" placeholder=""><br><br>
                                 <!--Alcance-->
                                 <label for="alcance">Tipo de envío</label>
-                                <input name="alcance" type="text" value="<?php echo $alcance; ?>" placeholder=""><br><br>
+                                <input name="alcance" type="text" value="<?php echo $pedido['alcance_P']; ?>" placeholder=""><br><br>
                             </form>
                         </div>
                     </p>

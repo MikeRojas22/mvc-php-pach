@@ -54,7 +54,7 @@
                     <a href="https://instagram.com/mexihat?utm_medium=copy_link" class="brandico-instagram"><img src="./../public/img/logos/logo ins.png"></a>
                 </li>
                 <li>
-                    <a href="LoginP.php" class="brandico-usuario"><img src="./../public/img/logos/usuario.png"></a>
+                    <a href="login.php" class="brandico-usuario"><img src="./../public/img/logos/usuario.png"></a>
                 </li>
             </ul>
         </div>  

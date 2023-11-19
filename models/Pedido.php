@@ -35,5 +35,12 @@ class Pedido {
         $stmt = $this->conn->prepare($sql);
         return $stmt->execute();
     }
+
+    public function getUltimoPedUsuario($id_cliente) {
+        $sql = "SELECT * FROM Pedido WHERE id_clienteP = '$id_cliente' ORDER BY fecha_P DESC LIMIT 1";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute();
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    }
 }
 ?>

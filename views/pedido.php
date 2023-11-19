@@ -1,3 +1,47 @@
+<?php
+require_once('../controllers/UsuarioController.php');
+require_once('../controllers/CatalogoController.php');
+require_once('../controllers/PedidoController.php');
+
+$Mod = '';
+date_default_timezone_set('America/Mexico_City');
+$fecha=date('d/m/o');
+
+if(!empty($_GET['vari'])){
+	$_SESSION['Mod']=$_GET['vari'];
+	$Mod = $_GET['vari'];
+}else{
+	$Mod=$_SESSION['Mod'];
+}
+
+if (isset($_SESSION["user_id"])) {
+	$usuarioController = new UsuarioController();
+	$user = $usuarioController->getUser();
+
+	$catalogoController = new CatalogoController();
+	$catalogo = $catalogoController->getCatalogo($Mod);
+
+
+	if (!empty($_POST['cantidadPro_P']) && !empty($_POST['envio']) && !empty($_POST['realizarPedido'])) {
+		if($_POST['cantidadPro_P']>5){
+			$total=$_POST['cantidadPro_P']*$catalogo['precioMay_M'];
+		}else{
+			$total=$_POST['cantidadPro_P']*$catalogo['precioMen_M'];
+		}
+	
+		$cantidad=$_POST['cantidadPro_P'];
+		$envio=$_POST['envio'];
+		
+		$pedidoController = new PedidoController();
+		$pedidoController->insertarPedido($user['id_cliente'],$Mod,$fecha,$cantidad,$total,$envio);
+	}
+} else {
+	header('Location: ./../index.php');
+}
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 	<head>
@@ -10,19 +54,19 @@
 		<div class="login-box">
 			<img class="avatar" src="./../public/img/logos/pedido.jpg" alt="">
 			<h1>Mi pedido</h1>
-			<form action = "FormularioPedidoP.php" method="POST">
+			<form action = "pedido.php" method="POST">
 				<!--USERNAME-->
 				<label for="username">Nombre</label>
-				<input type="text" value="<?php echo $nombre." ".$apellido; ?>" placeholder="Ingrese su nombre">
+				<input type="text" value="<?php echo $user['nombre_C']." ".$user['apellidos_C']; ?>" placeholder="Ingrese su nombre">
 				<!--Correo-->
 				<label for="correo">Correo</label>
-				<input type="text" value="<?php echo $correo; ?>" placeholder="Ingrese su correo">
+				<input type="text" value="<?php echo $user['correo_C']; ?>" placeholder="Ingrese su correo">
 				<!--Serie Modelos-->
 				<label for="serie">Serie Modelo</label>
-				<input type="text" value="<?php echo $Mod; ?>" placeholder="">
+				<input type="text" value="<?php echo $catalogo['id_modelo']; ?>" placeholder="">
 				<!--Modelos-->
 				<label for="modelo">Modelo</label>
-				<input type="text" value="<?php echo $nomMode; ?>" placeholder="">
+				<input type="text" value="<?php echo $catalogo['nombre_M']; ?>" placeholder="">
 				<!--Cantidad-->
 				<label for="cantidad">Cantidad</label><br>
 				<select name="cantidadPro_P" id="cantidad">
@@ -47,27 +91,27 @@
 				<input type="text" value="<?php echo $fecha; ?>" placeholder="">
 				<!--País-->
 				<label for="pais">País</label>
-				<input type="text" value="<?php echo $pais; ?>" placeholder="Ingrese nombre del país">
+				<input type="text" value="<?php echo $user['pais_C']; ?>" placeholder="Ingrese nombre del país">
 				<!--Estado-->
 				<label for="estado">Estado</label>
-				<input type="text" value="<?php echo $estado; ?>" placeholder="Ingrese nombre del estado">
+				<input type="text" value="<?php echo $user['estado_C']; ?>" placeholder="Ingrese nombre del estado">
 				<!--calle-->
 				<label for="calle">Calle</label>
-				<input type="text" value="<?php echo $calle; ?>" placeholder="Ingrese nombre de la calle">
+				<input type="text" value="<?php echo $user['calle_C']; ?>" placeholder="Ingrese nombre de la calle">
 				<!--colonia-->
 				<label for="colonia">Colonia</label>
-				<input type="text" value="<?php echo $colonia; ?>" placeholder="Ingrese nombre de la colonia">
+				<input type="text" value="<?php echo  $user['colonia_C']; ?>" placeholder="Ingrese nombre de la colonia">
 				<!--numero-->
 				<label for="numero">Núm</label>
-				<input type="text" value="<?php echo $numCasa; ?>" placeholder="Ingrese número de casa">
+				<input type="text" value="<?php echo $user['numCasa_C']; ?>" placeholder="Ingrese número de casa">
 				<!--cp-->
 				<label for="cp">Código Postal</label>
-				<input type="text" value="<?php echo $codigo; ?>" placeholder="Ingrese código postal">
+				<input type="text" value="<?php echo  $user['CP_C'] ?>" placeholder="Ingrese código postal">
 				<!--telefono-->
 				<label for="telefono">Teléfono</label>
-				<input type="text" value="<?php echo $tel; ?>" placeholder="(ejem. 4771234567)">
+				<input type="text" value="<?php echo $user['telefono_C']; ?>" placeholder="(ejem. 4771234567)">
 				<!--Botón-->
-				<input name= "sum" type="submit" value="Confirmar Pedido"><br><br>
+				<input name="realizarPedido" type="submit" value="Confirmar Pedido"><br><br>
 			</form>
 		</div>
 	</body>    
