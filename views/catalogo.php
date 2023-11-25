@@ -156,7 +156,7 @@ if (isset($_SESSION["user_id"])) {
                                     <p>Menudeo $<?php echo $m3['precioMen_M']; ?>
                                         Mayoreo $<?php echo $m3['precioMay_M']; ?>
                                     </p>
-                                    <a href="pedido.php?vari=<?php echo $m3['id_modelo']; ?>" class="lb-comprar">Comprar</a>
+                                    <a href="/pedido.php?vari=<?php echo $m3['id_modelo']; ?>" class="lb-comprar">Comprar</a>
                                 </div>
                             </center>
                             <a href="#page" class="lb-close">X Cerrar</a>
@@ -164,11 +164,11 @@ if (isset($_SESSION["user_id"])) {
                     </li>
                     <li>
                         <a href="#image-2">
-                            <img src="../public/img/catalogo/Pluma1.png" id="Pluma" alt="image02">
+                            <img src="./../public/img/catalogo/Pluma1.png" id="Pluma" alt="image02">
                             <span>Pluma</span>
                         </a>
                         <div class="lb-overlay" id="image-2">
-                            <center><img src="../public/img/catalogo/Pluma1.png" alt="image02" /></center>
+                            <center><img src="./../public/img/catalogo/Pluma1.png" alt="image02" /></center>
                             <div>
                             <?php
                                 $m4_key = array_search('Mo004', array_column($products, 'id_modelo'));
@@ -178,18 +178,18 @@ if (isset($_SESSION["user_id"])) {
                             <p>Menudeo $<?php echo $m4['precioMen_M']; ?>
                                 Mayoreo $<?php echo $m4['precioMay_M']; ?>
                             </p>
-                            <a href="pedido.php?vari=<?php echo $m4['id_modelo']; ?>" class="lb-comprar">Comprar</a>
+                            <a href="/pedido.php?vari=<?php echo $m4['id_modelo']; ?>" class="lb-comprar">Comprar</a>
                             </div>
                             <a href="#page" class="lb-close">X Cerrar</a>
                         </div>
                     </li>
                     <li>
                         <a href="#image-3">
-                            <img src="../public/img/catalogo/Colibri1.png" id="Colibri" alt="image03">
+                            <img src="./../public/img/catalogo/Colibri1.png" id="Colibri" alt="image03">
                             <span>Colibrí Huichol</span>
                         </a>
                         <div class="lb-overlay" id="image-3">
-                            <center><img src="../public/img/catalogo/Colibri1.png" alt="image03" /></center>
+                            <center><img src="./../public/img/catalogo/Colibri1.png" alt="image03" /></center>
                             <div>
                                 <?php
                                     $m5_key = array_search('Mo005', array_column($products, 'id_modelo'));
@@ -199,14 +199,14 @@ if (isset($_SESSION["user_id"])) {
                                 <p>Menudeo $<?php echo $m5['precioMen_M']; ?>
                                     Mayoreo $<?php echo $m5['precioMay_M']; ?>
                                 </p>
-                                <a href="pedido.php?vari=<?php echo $m5['id_modelo']; ?>" class="lb-comprar">Comprar</a>
+                                <a href="/pedido.php?vari=<?php echo $m5['id_modelo']; ?>" class="lb-comprar">Comprar</a>
                             </div>
                             <a href="#page" class="lb-close">X Cerrar</a>
                         </div>
                     </li>
                     <li>
                         <a href="#image-4">
-                            <img src="../public/img/catalogo/Especial1.png" id="Especial" alt="image04">
+                            <img src="./../public/img/catalogo/Especial1.png" id="Especial" alt="image04">
                             <span>Pirámide</span>
                         </a>
                         <div class="lb-overlay" id="image-4">
@@ -241,14 +241,14 @@ if (isset($_SESSION["user_id"])) {
                                 <p>Menudeo $<?php echo $m6['precioMen_M']; ?>
                                     Mayoreo $<?php echo $m6['precioMay_M']; ?>
                                 </p>
-                                <a href="pedido.php?vari=<?php echo $m6['id_modelo']; ?>" class="lb-comprar">Comprar</a>
+                                <a href="/pedido.php?vari=<?php echo $m6['id_modelo']; ?>" class="lb-comprar">Comprar</a>
                             </div>
                             <a href="#page" class="lb-close">X Cerrar</a>
                         </div>
                     </li>
                     <li>
                         <a href="#image-5">
-                            <img src="../public/img/catalogo/Flor1.png" id="Flor" alt="image05">
+                            <img src="./../public/img/catalogo/Flor1.png" id="Flor" alt="image05">
                             <span>Girasol</span>
                         </a>
                         <div class="lb-overlay" id="image-5">
@@ -282,7 +282,7 @@ if (isset($_SESSION["user_id"])) {
                                 <p>Menudeo $<?php echo $m2['precioMen_M']; ?>
                                     Mayoreo $<?php echo $m2['precioMay_M']; ?>
                                 </p>
-                                <a href="pedido.php?vari=<?php echo $m2['id_modelo']; ?>" class="lb-comprar">Comprar</a>
+                                <a href="/pedido.php?vari=<?php echo $m2['id_modelo']; ?>" class="lb-comprar">Comprar</a>
                             </div>
                             <a href="#page" class="lb-close">X Cerrar</a>
                         </div>
@@ -324,7 +324,7 @@ if (isset($_SESSION["user_id"])) {
                                 <p>Menudeo $<?php echo $m8['precioMen_M']; ?>
                                     Mayoreo $<?php echo $m8['precioMay_M']; ?>
                                 </p>
-                                <a href="pedido.php?vari=<?php echo $m8['id_modelo']; ?>" class="lb-comprar">Comprar</a>
+                                <a href="/pedido.php?vari=<?php echo $m8['id_modelo']; ?>" class="lb-comprar">Comprar</a>
                             </div>
                             <a href="#page" class="lb-close">X Cerrar</a>
                         </div>
@@ -345,7 +345,7 @@ if (isset($_SESSION["user_id"])) {
                                 <p>Menudeo $<?php echo $m1['precioMen_M']; ?>
                                     Mayoreo $<?php echo $m1['precioMay_M']; ?>
                                 </p>
-                                <a href="pedido.php?vari=<?php echo $m1['id_modelo']; ?>" class="lb-comprar">Comprar</a>
+                                <a href="/pedido.php?vari=<?php echo $m1['id_modelo']; ?>" class="lb-comprar">Comprar</a>
                             </div>
                             <a href="#page" class="lb-close">X Cerrar</a>
                         </div>
@@ -366,7 +366,7 @@ if (isset($_SESSION["user_id"])) {
                                 <p>Menudeo $<?php echo $m9['precioMen_M']; ?>
                                     Mayoreo $<?php echo $m9['precioMay_M']; ?>
                                 </p>
-                                <a href="pedido.php?vari=<?php echo $m9['id_modelo']; ?>" class="lb-comprar">Comprar</a>
+                                <a href="/pedido.php?vari=<?php echo $m9['id_modelo']; ?>" class="lb-comprar">Comprar</a>
                             </div>
                             <a href="#page" class="lb-close">X Cerrar</a>
                         </div>
@@ -387,7 +387,7 @@ if (isset($_SESSION["user_id"])) {
                                 <p>Menudeo $<?php echo $m10['precioMen_M']; ?>
                                     Mayoreo $<?php echo $m10['precioMay_M']; ?>
                                 </p>
-                                <a href="pedido.php?vari=<?php echo $m10['id_modelo']; ?>" class="lb-comprar">Comprar</a>
+                                <a href="/pedido.php?vari=<?php echo $m10['id_modelo']; ?>" class="lb-comprar">Comprar</a>
                             </div>
                             </center>
                             <a href="#page" class="lb-close">X Cerrar</a>
@@ -409,7 +409,7 @@ if (isset($_SESSION["user_id"])) {
                                 <p>Menudeo $<?php echo $m11['precioMen_M']; ?>
                                     Mayoreo $<?php echo $m11['precioMay_M']; ?>
                                 </p>
-                                <a href="pedido.php?vari=<?php echo $m11['id_modelo']; ?>" class="lb-comprar">Comprar</a>
+                                <a href="/pedido.php?vari=<?php echo $m11['id_modelo']; ?>" class="lb-comprar">Comprar</a>
                             </div>
                             <a href="#page" class="lb-close">X Cerrar</a>
                         </div>
@@ -430,7 +430,7 @@ if (isset($_SESSION["user_id"])) {
                                 <p>Menudeo $<?php echo $m12['precioMen_M']; ?>
                                     Mayoreo $<?php echo $m12['precioMay_M']; ?>
                                 </p>
-                                <a href="pedido.php?vari=<?php echo $m12['id_modelo']; ?>" class="lb-comprar">Comprar</a>
+                                <a href="/pedido.php?vari=<?php echo $m12['id_modelo']; ?>" class="lb-comprar">Comprar</a>
                             </div>
                             <a href="#page" class="lb-close">X Cerrar</a>
                         </div>
@@ -473,7 +473,7 @@ if (isset($_SESSION["user_id"])) {
                             <p>Menudeo $<?php echo $m13['precioMen_M']; ?>
                                 Mayoreo $<?php echo $m13['precioMay_M']; ?>
                             </p>
-                            <a href="pedido.php?vari=<?php echo $m13['id_modelo']; ?>" class="lb-comprar">Comprar</a>
+                            <a href="/pedido.php?vari=<?php echo $m13['id_modelo']; ?>" class="lb-comprar">Comprar</a>
                             </div>
                             <a href="#page" class="lb-close">X Cerrar</a>
                         </div>
@@ -494,7 +494,7 @@ if (isset($_SESSION["user_id"])) {
                                 <p>Menudeo $<?php echo $m14['precioMen_M']; ?>
                                     Mayoreo $<?php echo $m14['precioMay_M']; ?>
                                 </p>
-                                <a href="pedido.php?vari=<?php echo $m14['id_modelo']; ?>" class="lb-comprar">Comprar</a>
+                                <a href="/pedido.php?vari=<?php echo $m14['id_modelo']; ?>" class="lb-comprar">Comprar</a>
                             </div>
                             <a href="#page" class="lb-close">X Cerrar</a>
                         </div>
@@ -536,7 +536,7 @@ if (isset($_SESSION["user_id"])) {
                                 <p>Menudeo $<?php echo $m15['precioMen_M']; ?>
                                     Mayoreo $<?php echo $m15['precioMay_M']; ?>
                                 </p>
-                                <a href="pedido.php?vari=<?php echo $m15['id_modelo']; ?>" class="lb-comprar">Comprar</a>
+                                <a href="/pedido.php?vari=<?php echo $m15['id_modelo']; ?>" class="lb-comprar">Comprar</a>
                             </div>
                             <a href="#page" class="lb-close">X Cerrar</a>
                         </div>
@@ -557,7 +557,7 @@ if (isset($_SESSION["user_id"])) {
                                 <p>Menudeo $<?php echo $m16['precioMen_M']; ?>
                                     Mayoreo $<?php echo $m16['precioMay_M']; ?>
                                 </p>
-                                <a href="pedido.php?vari=<?php echo $m16['id_modelo']; ?>" class="lb-comprar">Comprar</a>
+                                <a href="/pedido.php?vari=<?php echo $m16['id_modelo']; ?>" class="lb-comprar">Comprar</a>
                             </div>
                             <a href="#page" class="lb-close">X Cerrar</a>
                         </div>
@@ -578,7 +578,7 @@ if (isset($_SESSION["user_id"])) {
                                 <p>Menudeo $<?php echo $m17['precioMen_M']; ?>
                                     Mayoreo $<?php echo $m17['precioMay_M']; ?>
                                 </p>
-                                <a href="pedido.php?vari=<?php echo $m17['id_modelo']; ?>" class="lb-comprar">Comprar</a>
+                                <a href="/pedido.php?vari=<?php echo $m17['id_modelo']; ?>" class="lb-comprar">Comprar</a>
                             </div>
                             <a href="#page" class="lb-close">X Cerrar</a>
                         </div>
@@ -599,7 +599,7 @@ if (isset($_SESSION["user_id"])) {
                                 <p>Menudeo $<?php echo $m18['precioMen_M']; ?>
                                     Mayoreo $<?php echo $m18['precioMay_M']; ?>
                                 </p>
-                                <a href="pedido.php?vari=<?php echo $m18['id_modelo']; ?>" class="lb-comprar">Comprar</a>
+                                <a href="/pedido.php?vari=<?php echo $m18['id_modelo']; ?>" class="lb-comprar">Comprar</a>
                             </div>
                             <a href="#page" class="lb-close">X Cerrar</a>
                         </div>
@@ -640,7 +640,7 @@ if (isset($_SESSION["user_id"])) {
                                 <p>Menudeo $<?php echo $m19['precioMen_M']; ?>
                                     Mayoreo $<?php echo $m19['precioMay_M']; ?>
                                 </p>
-                                <a href="pedido.php?vari=<?php echo $m19['id_modelo']; ?>" class="lb-comprar">Comprar</a>
+                                <a href="/pedido.php?vari=<?php echo $m19['id_modelo']; ?>" class="lb-comprar">Comprar</a>
                             </div>
                             <a href="#page" class="lb-close">X Cerrar</a>
                         </div>
@@ -661,7 +661,7 @@ if (isset($_SESSION["user_id"])) {
                                 <p>Menudeo $<?php echo $m20['precioMen_M']; ?>
                                     Mayoreo $<?php echo $m20['precioMay_M']; ?>
                                 </p>
-                                <a href="pedido.php?vari=<?php echo $m20['id_modelo']; ?>" class="lb-comprar">Comprar</a>
+                                <a href="/pedido.php?vari=<?php echo $m20['id_modelo']; ?>" class="lb-comprar">Comprar</a>
                             </div>
                             <a href="#page" class="lb-close">X Cerrar</a>
                         </div>
@@ -682,7 +682,7 @@ if (isset($_SESSION["user_id"])) {
                                 <p>Menudeo $<?php echo $m21['precioMen_M']; ?>
                                     Mayoreo $<?php echo $m21['precioMay_M']; ?>
                                 </p>
-                                <a href="pedido.php?vari=<?php echo $m21['id_modelo']; ?>" class="lb-comprar">Comprar</a>
+                                <a href="/pedido.php?vari=<?php echo $m21['id_modelo']; ?>" class="lb-comprar">Comprar</a>
                             </div>
                             <a href="#page" class="lb-close">X Cerrar</a>
                         </div>
@@ -703,7 +703,7 @@ if (isset($_SESSION["user_id"])) {
                                 <p>Menudeo $<?php echo $m22['precioMen_M']; ?>
                                     Mayoreo $<?php echo $m22['precioMay_M']; ?>
                                 </p>
-                                <a href="pedido.php?vari=<?php echo $m22['id_modelo']; ?>" class="lb-comprar">Comprar</a>
+                                <a href="/pedido.php?vari=<?php echo $m22['id_modelo']; ?>" class="lb-comprar">Comprar</a>
                             </div>
                             <a href="#page" class="lb-close">X Cerrar</a>
                         </div>
@@ -724,7 +724,7 @@ if (isset($_SESSION["user_id"])) {
                                 <p>Menudeo $<?php echo $m23['precioMen_M']; ?>
                                     Mayoreo $<?php echo $m23['precioMay_M']; ?>
                                 </p>
-                                <a href="pedido.php?vari=<?php echo $m23['id_modelo']; ?>" class="lb-comprar">Comprar</a>
+                                <a href="/pedido.php?vari=<?php echo $m23['id_modelo']; ?>" class="lb-comprar">Comprar</a>
                             </div>
                             <a href="#page" class="lb-close">X Cerrar</a>
                         </div>
@@ -745,7 +745,7 @@ if (isset($_SESSION["user_id"])) {
                                 <p>Menudeo $<?php echo $m24['precioMen_M']; ?>
                                     Mayoreo $<?php echo $m24['precioMay_M']; ?>
                                 </p>
-                                <a href="pedido.php?vari=<?php echo $m24['id_modelo']; ?>" class="lb-comprar">Comprar</a>
+                                <a href="/pedido.php?vari=<?php echo $m24['id_modelo']; ?>" class="lb-comprar">Comprar</a>
                             </div>
                             <a href="#page" class="lb-close">X Cerrar</a>
                         </div>
@@ -766,7 +766,7 @@ if (isset($_SESSION["user_id"])) {
                                 <p>Menudeo $<?php echo $m25['precioMen_M']; ?>
                                     Mayoreo $<?php echo $m25['precioMay_M']; ?>
                                 </p>
-                                <a href="pedido.php?vari=<?php echo $m25['id_modelo']; ?>" class="lb-comprar">Comprar</a>
+                                <a href="/pedido.php?vari=<?php echo $m25['id_modelo']; ?>" class="lb-comprar">Comprar</a>
                             </div>
                             <a href="#page" class="lb-close">X Cerrar</a>
                         </div>
@@ -787,7 +787,7 @@ if (isset($_SESSION["user_id"])) {
                                 <p>Menudeo $<?php echo $m26['precioMen_M']; ?>
                                     Mayoreo $<?php echo $m26['precioMay_M']; ?>
                                 </p>
-                                <a href="pedido.php?vari=<?php echo $m26['id_modelo']; ?>" class="lb-comprar">Comprar</a>
+                                <a href="/pedido.php?vari=<?php echo $m26['id_modelo']; ?>" class="lb-comprar">Comprar</a>
                             </div>
                             <a href="#page" class="lb-close">X Cerrar</a>
                         </div>
@@ -808,7 +808,7 @@ if (isset($_SESSION["user_id"])) {
                                 <p>Menudeo $<?php echo $m27['precioMen_M']; ?>
                                     Mayoreo $<?php echo $m27['precioMay_M']; ?>
                                 </p>
-                                <a href="pedido.php?vari=<?php echo $m27['id_modelo']; ?>" class="lb-comprar">Comprar</a>
+                                <a href="/pedido.php?vari=<?php echo $m27['id_modelo']; ?>" class="lb-comprar">Comprar</a>
                             </div>
                             <a href="#page" class="lb-close">X Cerrar</a>
                         </div>
@@ -829,7 +829,7 @@ if (isset($_SESSION["user_id"])) {
                                 <p>Menudeo $<?php echo $m28['precioMen_M']; ?>
                                     Mayoreo $<?php echo $m28['precioMay_M']; ?>
                                 </p>
-                                <a href="pedido.php?vari=<?php echo $m28['id_modelo']; ?>" class="lb-comprar">Comprar</a>
+                                <a href="/pedido.php?vari=<?php echo $m28['id_modelo']; ?>" class="lb-comprar">Comprar</a>
                             </div>
                             <a href="#page" class="lb-close">X Cerrar</a>
                         </div>
@@ -850,7 +850,7 @@ if (isset($_SESSION["user_id"])) {
                                 <p>Menudeo $<?php echo $m29['precioMen_M']; ?>
                                     Mayoreo $<?php echo $m29['precioMay_M']; ?>
                                 </p>
-                                <a href="pedido.php?vari=<?php echo $m29['id_modelo']; ?>" class="lb-comprar">Comprar</a>
+                                <a href="/pedido.php?vari=<?php echo $m29['id_modelo']; ?>" class="lb-comprar">Comprar</a>
                             </div>
                             <a href="#page" class="lb-close">X Cerrar</a>
                         </div>
@@ -871,7 +871,7 @@ if (isset($_SESSION["user_id"])) {
                                 <p>Menudeo $<?php echo $m30['precioMen_M']; ?>
                                     Mayoreo $<?php echo $m30['precioMay_M']; ?>
                                 </p>
-                                <a href="pedido.php?vari=<?php echo $m30['id_modelo']; ?>" class="lb-comprar">Comprar</a>
+                                <a href="/pedido.php?vari=<?php echo $m30['id_modelo']; ?>" class="lb-comprar">Comprar</a>
                             </div>
                             <a href="#page" class="lb-close">X Cerrar</a>
                         </div>
@@ -892,7 +892,7 @@ if (isset($_SESSION["user_id"])) {
                                 <p>Menudeo $<?php echo $m31['precioMen_M']; ?>
                                     Mayoreo $<?php echo $m31['precioMay_M']; ?>
                                 </p>
-                                <a href="pedido.php?vari=<?php echo $m31['id_modelo']; ?>" class="lb-comprar">Comprar
+                                <a href="/pedido.php?vari=<?php echo $m31['id_modelo']; ?>" class="lb-comprar">Comprar
                             </div>
                             <a href="#page" class="lb-close">X Cerrar</a>
                         </div>
@@ -911,7 +911,7 @@ if (isset($_SESSION["user_id"])) {
             <div class="column column--33">
                 <h2 class="column__title">Contactanos</h2>
                 <p class="column__txt">Telefono: 477 592 86 46</p>
-                <p class="column__txt">argoteana3@gmail.com</p>
+                <p class="column__txt">@gmail.com</p>
             </div>
             <div class="column column--33">
                 <h2 class="column__title">Siguenos en nuestras redes sociales</h2>
